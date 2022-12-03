@@ -1,0 +1,5 @@
+// Caravel user project includes		
+$USER_PROJECT_VERILOG/gl/user_project_wrapper.v	     
+$USER_PROJECT_VERILOG/gl/collatz.v
+$USER_PROJECT_VERILOG/gl/C_DP.v
+$USER_PROJECT_VERILOG/gl/C_FSMR.v
