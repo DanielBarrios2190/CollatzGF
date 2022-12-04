@@ -28,18 +28,19 @@ set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "20.0"
+set ::env(CLOCK_PERIOD) "15.0"
 
 set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
+set ::env(SYNTH_STRATEGY) "AREA 3"
 
 set ::env(FP_SIZING) "absolute"
-set ::env(DIE_AREA) "0 0 400 400" 
+set ::env(DIE_AREA) "0 0 220 220" 
 
-set ::env(PL_TARGET_DENSITY) 0.80
+set ::env(PL_TARGET_DENSITY) 0.8
+#set ::env(PL_RANDOM_INITIAL_PLACEMENT) 1
+set ::env(FP_CORE_UTIL) 100
 
-set ::env(FP_CORE_UTIL) 90
-
-set ::env(SYNTH_MAX_FANOUT) 14
+#set ::env(SYNTH_MAX_FANOUT) 6
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 

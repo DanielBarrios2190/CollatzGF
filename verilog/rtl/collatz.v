@@ -4,6 +4,8 @@
 //Grupo: Los Cracks
 //Codigos: 2190407 2190418 2190427
 module collatz(
+    inout vdd,
+    inout vss,
     input [15:0] co, //Número de entrada
     input st, //Start
     input clk, //Señal de Reloj

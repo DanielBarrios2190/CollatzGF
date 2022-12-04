@@ -69,19 +69,20 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 collatz collatz (
-/*`ifdef USE_POWER_PINS
+
+`ifdef USE_POWER_PINS
 	.vdd(vdd),	// User area 1 1.8V power
 	.vss(vss),	// User area 1 digital ground
 `endif
-*/
+
     .clk(wb_clk_i),
     .co(wbs_dat_i[15:0]),
     .st(wbs_dat_i[16]),
     .x(wbs_dat_o[15:0]),
     .bs(wbs_dat_o[16])
 
-    //.co (io_in[15:0]),
-    //.st (io_in[16]),
+    //.co(io_in[15:0]),
+    //.st(io_in[16]),
     //.x(io_out[15:0]),
     //.bs(io_out[16])
 );

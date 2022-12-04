@@ -1,49 +1,49 @@
 ###############################################################################
 # Created by write_sdc
-# Sat Dec  3 21:15:23 2022
+# Sun Dec  4 01:24:59 2022
 ###############################################################################
 current_design collatz
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name clk -period 20.0000 [get_ports {clk}]
+create_clock -name clk -period 15.0000 [get_ports {clk}]
 set_clock_transition 0.1500 [get_clocks {clk}]
 set_clock_uncertainty 0.2500 clk
 set_propagated_clock [get_clocks {clk}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[0]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[10]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[11]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[12]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[13]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[14]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[15]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[1]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[2]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[3]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[4]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[5]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[6]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[7]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[8]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[9]}]
-set_input_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {st}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bs}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[0]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[10]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[11]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[12]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[13]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[14]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[15]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[1]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[2]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[3]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[4]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[5]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[6]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[7]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[8]}]
-set_output_delay 4.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[9]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[0]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[10]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[11]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[12]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[13]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[14]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[15]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[1]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[2]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[3]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[4]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[5]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[6]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[7]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[8]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {co[9]}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {st}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bs}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[0]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[10]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[11]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[12]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[13]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[14]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[15]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[1]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[2]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[3]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[4]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[5]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[6]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[7]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[8]}]
+set_output_delay 3.0000 -clock [get_clocks {clk}] -add_delay [get_ports {x[9]}]
 ###############################################################################
 # Environment
 ###############################################################################
@@ -87,4 +87,4 @@ set_timing_derate -late 1.0500
 ###############################################################################
 # Design Rules
 ###############################################################################
-set_max_fanout 14.0000 [current_design]
+set_max_fanout 10.0000 [current_design]
