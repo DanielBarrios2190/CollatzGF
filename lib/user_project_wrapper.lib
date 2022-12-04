@@ -110,7 +110,7 @@ library (user_project_wrapper) {
     }
     pin("wb_clk_i") {
       direction : input;
-      capacitance : 0.1989;
+      capacitance : 0.0919;
     }
     pin("wb_rst_i") {
       direction : input;
@@ -1610,71 +1610,71 @@ library (user_project_wrapper) {
     }
     pin("wbs_dat_i[16]") {
       direction : input;
-      capacitance : 0.1339;
+      capacitance : 0.0860;
     }
     pin("wbs_dat_i[15]") {
       direction : input;
-      capacitance : 0.1428;
+      capacitance : 0.0597;
     }
     pin("wbs_dat_i[14]") {
       direction : input;
-      capacitance : 0.1447;
+      capacitance : 0.0654;
     }
     pin("wbs_dat_i[13]") {
       direction : input;
-      capacitance : 0.1500;
+      capacitance : 0.0700;
     }
     pin("wbs_dat_i[12]") {
       direction : input;
-      capacitance : 0.2038;
+      capacitance : 0.0595;
     }
     pin("wbs_dat_i[11]") {
       direction : input;
-      capacitance : 0.1503;
+      capacitance : 0.0984;
     }
     pin("wbs_dat_i[10]") {
       direction : input;
-      capacitance : 0.1567;
+      capacitance : 0.1011;
     }
     pin("wbs_dat_i[9]") {
       direction : input;
-      capacitance : 0.1553;
+      capacitance : 0.0542;
     }
     pin("wbs_dat_i[8]") {
       direction : input;
-      capacitance : 0.1567;
+      capacitance : 0.0560;
     }
     pin("wbs_dat_i[7]") {
       direction : input;
-      capacitance : 0.1606;
+      capacitance : 0.0642;
     }
     pin("wbs_dat_i[6]") {
       direction : input;
-      capacitance : 0.1603;
+      capacitance : 0.0650;
     }
     pin("wbs_dat_i[5]") {
       direction : input;
-      capacitance : 0.1622;
+      capacitance : 0.0622;
     }
     pin("wbs_dat_i[4]") {
       direction : input;
-      capacitance : 0.1645;
+      capacitance : 0.0648;
     }
     pin("wbs_dat_i[3]") {
       direction : input;
-      capacitance : 0.1732;
+      capacitance : 0.0665;
     }
     pin("wbs_dat_i[2]") {
       direction : input;
-      capacitance : 0.1683;
+      capacitance : 0.0690;
     }
     pin("wbs_dat_i[1]") {
       direction : input;
-      capacitance : 0.1714;
+      capacitance : 0.0722;
     }
     pin("wbs_dat_i[0]") {
       direction : input;
-      capacitance : 0.1773;
+      capacitance : 0.0799;
     }
     }
     bus("wbs_dat_o") {
